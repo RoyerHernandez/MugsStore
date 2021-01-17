@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* se agrega fuente */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+/* Establecer Variables */
+:root{
+    /* Colores */
+    --blue_color:paleturquoise;
+    --dark-blue_color:#44dede;
+    --white_color:white;
+    --deep-pink_color:deeppink;
+    --black:#313337;
+    --grey:#edeff3;
+    /* Relleno */
+    --common_padding:10px;
+    /* Sombra */
+    --box:2px 2px 11px 1px rgb(31 29 29 / 50%); 
+    --box-white:2px 2px 11px 1px rgb(31 29 29 / 50%);
+}
+
+@media (max-width: 600px){
+    .products{
+        display: inherit;
+        height: auto;
+    }
+    .product{
+        margin-top: auto;
+    }
+    .product .content{
+        height: auto;
+    }
+    .img_content{
+        margin: auto;
+        margin-top: 30px;        
+    }
+    .nav-list-menu a{
+        font-size: 0.8rem;
+        color: var(--white_color);
+    }
+    .main-section-logo{
+        display: inherit;
+        font-size: 0.8rem;
+    }
+}
+@media (min-width: 768px){
+    .product .content{
+        height: auto;
+        margin-top: 100px;
+    }
+}

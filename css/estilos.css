@@ -1,0 +1,360 @@
+/* Establecer valores iniciales */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* se agrega fuente */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+/* Establecer Variables */
+:root{
+    /* Colores */
+    --blue_color:paleturquoise;
+    --dark-blue_color:#44dede;
+    --white_color:white;
+    --deep-pink_color:deeppink;
+    --black:#313337;
+    --grey:#edeff3;
+    /* Relleno */
+    --common_padding:10px;
+    /* Sombra */
+    --box:2px 2px 11px 1px rgb(31 29 29 / 50%); 
+    --box-white:2px 2px 11px 1px rgb(31 29 29 / 50%);
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+}
+nav{
+    display: flex;   
+    justify-content: space-between;
+    padding: var(--common_padding);
+    align-items: center;
+    font-size: 2rem;
+    background-color:var(--blue_color);
+}
+nav ul{
+    display: flex;    
+}
+nav li{
+    list-style: none;
+}
+nav li a{
+    text-decoration: none;
+    padding: var(--common_padding);
+    color: var(--white_color);
+}
+nav .nav-logo-coffe{    
+    margin: var(--common_padding); 
+    box-shadow: var(--box);  
+}
+nav a:hover{
+    color:var(--deep-pink_color);
+}
+.main-section-products{    
+    padding-top: 10%;
+    text-align: center;
+}
+.products{
+    background-image: url("../images/curve.png");    
+    background-size: cover;
+    background-position: center top;    
+    padding: 20%;
+    display: flex;
+    height: auto;
+}
+.product{
+    padding: var(--common_padding);
+    margin-top: -265px;   
+}
+
+.product .content{
+    background-color: var(--white_color);
+    padding: var(--common_padding);
+    box-shadow: var(--box);  
+    height: auto;
+}
+.img_content{
+    display: flex;
+    justify-content: center;
+    margin: var(--common_padding);
+}
+.content h1{
+    margin: 30px 0 10px;
+}
+.content p{
+    margin: 30px 0 10px;
+}
+.main_button{
+    background-color: var(--blue_color);
+    width: 100%;
+    border: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--white_color);
+    border-radius: 5px;
+    padding: var(--common_padding);    
+    cursor: pointer;
+}
+.main_button:hover{
+    background-color: var(--dark-blue_color);    
+}
+.products_detail{
+    display: inline-block;
+    background-image: url("../images/curve.png");
+    background-size: cover;
+    background-position: center top;
+    height: 100%;
+    width: 100%;  
+    margin-top: -30px;  
+}
+.product_detail{
+    display: block;
+    padding: var(--common_padding); 
+    align-items: center;
+    margin-left: 300px;
+}
+
+.product_detail .content{
+    display: flex;
+    background-color: var(--white_color);
+    padding: var(--common_padding);
+    box-shadow: var(--box);  
+    max-width: 580px;
+    
+}
+.main_button_detail{
+    background-color: var(--blue_color);
+    width: 100%;
+    border: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--white_color);
+    border-radius: 5px;
+    padding: var(--common_padding);    
+    cursor: pointer;
+    
+}
+.main_button_detail:hover{
+    background-color: var(--dark-blue_color);    
+}
+.main-title-products h1{
+   margin-left: -500px;
+   color: var(--dark-blue_color);
+}
+.main_button_form{
+    margin-top: 10px;
+    background-color: var(--blue_color);
+    width: 100%;
+    border: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--white_color);
+    border-radius: 5px;
+    padding: var(--common_padding);    
+    cursor: pointer;
+}
+.product-pai{
+    padding: var(--common_padding);
+    margin-top: -265px; 
+    width: 300px;  
+}
+.product-pai .content-pai{
+    background-color: var(--white_color);
+    padding: 5px;
+    box-shadow: var(--box);      
+}
+.content-pai h1{
+    margin: 30px 0 10px;
+}
+.content-pai p{
+    margin: 30px 0 10px;
+}
+.form-label-input{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: var(--black);
+}
+.form-label-input input{
+    border-radius: 2px;
+    border: 1px solid grey;
+}
+.main_button_form:hover{
+    background-color: var(--dark-blue_color);
+}
+.main-section-finish{
+    margin-top: 150px;
+    display: block;    
+}
+.main-section-logo{    
+    display: flex;
+    align-items: center;
+    font-size: 1.7rem;
+    font-weight: bold;
+    justify-content: center;
+    color: var(--dark-blue_color);
+}
+.main-section-logo:hover{
+    color: var(--deep-pink_color);
+}
+.main-section-purchase{
+    background-color: var(--black);
+}
+
+
+.main-product-detail{
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 20px 10px;    
+}
+.product-detail-batata--icon{
+    position: absolute;
+    width: 40px; 
+    height: 25px;   
+    top: -10px;
+    left: calc(50% - 20px);
+    background-image: url("");
+}
+.product-detail--title{
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    color: var(--dark-blue_color);
+}
+.product-detail--title h2{
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+.product-detail--title p{
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.8rem;
+    color: #808080;
+}
+.product-detail--cards{
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 150px;
+    padding: 20px;
+    margin: 15px auto;
+    border-radius: 5px;
+    background-color: var(--grey);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+    color: var(--dark-blue_color);
+}
+.product-detail--cards .clock{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-image: url("../images/Icons/mug.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.product--cards-title{
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--just-white);
+}
+.product--cards-body{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+.product-detail--cards .eye{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-image: url("../images/Icons/coffee-mug.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.product-detail--cards .simbol{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-image: url("../images/Icons/coffee-or-tea-mug.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.product-detail--cards .check{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-image: url("../images/Icons/botella.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bitcoin-image-container{
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+    background-image: url("./assets/img/bitcoinbaby2x.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;    
+    text-align: center;
+}
+footer{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--black);
+}
+footer section{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+footer .left ul{
+    font-size: 1.4rem;
+    font-weight: 500px;
+    line-height: 1.8rem;
+    list-style: none;
+}
+.left li{
+    margin: 10px 0;
+}
+.left a{
+    text-decoration: none;
+    color: var(--dark-blue_color);
+}
+.footer-logo-coffe{
+    margin: var(--common_padding); 
+    box-shadow: var(--box);      
+}
+.footer-logo-coffe:hover{
+    color:var(--deep-pink_color);
+}
+.contact a{
+    color: var(--deep-pink_color);
+}

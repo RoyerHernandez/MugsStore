@@ -1,0 +1,63 @@
+
+:root{
+    --width-column:8.33333333333%;
+}
+
+main .container{
+    max-width: 900px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    justify-content: space-evenly;
+}
+.col-1{
+    width: var(--width-column);
+}
+.col-2{
+    width: calc(var(--width-column) * 2);
+}
+.col-3{
+    width: calc(var(--width-column) * 3);
+}
+.col-4{
+    width: calc(var(--width-column) * 4);
+}
+.col-5{
+    width: calc(var(--width-column) * 5);
+}
+.col-6{
+    width: calc(var(--width-column) * 6);
+}
+.col-7{
+    width: calc(var(--width-column) * 7);
+}
+.col-8{
+    width: calc(var(--width-column) * 8);
+}
+.col-9{
+    width: calc(var(--width-column) * 9);
+}
+.col-10{
+    width: calc(var(--width-column) * 10);
+}
+.col-11{
+    width: calc(var(--width-column) * 11);
+}
+.col-12{
+    width: calc(var(--width-column) * 12);
+}
+/* container > roww > column  */
+
+[class*=col-]{
+    padding: 10px;
+}
+
+@media (max-width: 900px){
+    .row{
+        display: inherit;
+    }
+    [class*=col-]{
+        width: 100%;
+    }  
+}
